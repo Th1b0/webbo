@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #D1FF1A;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 4rem;
+    background-color: #f2f2f2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), inset 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+    animation: containerFadeIn 1s ease forwards;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-bottom: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+h1 span {
+    color: #D1FF1A;
+}
+
+p {
+    margin-inline: auto;
+    text-align: left;
+    width: 75%;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.25rem;
+    color: black;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease forwards;
+    animation-delay: 0.7s;
+}
+
+.taal {
+    color: #00000080;
+}
+
+.taal a {
+
+    color: #00000080;
+    font-weight: bold;
+}
+
+.logo {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: logoFadeIn 1.5s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.logo img {
+    max-width: 8rem;
+}
+
+.footer {
+    margin-inline: auto;
+    width: 75%;
+    text-align: left;
+    color: #00000080;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes logoFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes containerFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        width: 95%;
+    }
+
+    .footer {
+        width: 95%;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
