@@ -148,6 +148,8 @@ p {
 
     .container {
         padding: 12px;
+        padding-top: 2rem;
+        margin: 1rem;
     }
 
     h1 {
